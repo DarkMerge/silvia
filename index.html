@@ -211,6 +211,18 @@
   </footer>
 </div>
 
+<div id="confirmation" class="confirmation-modal-container">
+  <div class="confirmation-modal">
+    <div class="confirmation-modal-title">Confirmed</div>
+    <div class="confirmation-modal-text">
+      Let's stay in touch. Actually ask Matthias what message should be here?
+    </div>
+    <div class="confirmation-modal-actions">
+      <button class="confirmation-modal-button" onclick="onClickOk()">OK</button>
+    </div>
+  </div>
+</div>
+
 </body>
 <script>
   const formFileError = document.getElementById('form-file-error');
@@ -232,11 +244,18 @@
     }
   }
 
+  // todo after success submit form, next code will display modal window with confirmation
+  const confirmation = document.getElementById('confirmation');
+  function onClickOk() {
+    if (confirmation) { confirmation.classList.remove('visible'); }
+  }
+
   // todo Aleksey remove this code if you will send data directly from form via "action" attribute
   const form = document.getElementById('form');
   form.addEventListener('submit', function(event) {
     console.log('submit ', event);
     event.preventDefault();
+    if (confirmation) { confirmation.classList.add('visible'); } // todo use anywhere
   });
 </script>
 </html>
