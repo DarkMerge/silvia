@@ -15,11 +15,3 @@
     @media only screen and (min-width: 1400px) { @content; }
   }
 }
-
-/*
-@include respond-to(handhelds) {}
-@include respond-to(tablets) {}
-@include respond-to(medium-screens) {}
-@include respond-to(hd-screens) {}
-@include respond-to(wide-screens) {}
-*/

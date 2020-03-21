@@ -11,11 +11,9 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-livereload": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.1",
-    "pump": "^3.0.0",
-    "st": "^2.0.0"
+    "node-sass": "^4.13.1"
   }
 }
