@@ -30,6 +30,11 @@ function copyImages() {
     .pipe(dest('./dist'));
 }
 
+function copyFavicon() {
+  return src('./favicon-16x16.png')
+    .pipe(dest('./dist'));
+}
+
 function cleanDist() {
   return src('./dist', { allowEmpty: true })
     .pipe(clean());
@@ -54,6 +59,7 @@ exports.build = series(
     compileCss,
     copyHtml,
     copyImages,
+    copyFavicon,
   ),
 );
 
