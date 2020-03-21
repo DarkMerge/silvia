@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Silvia</title>
+</head>
+<body>
+
+<div class="main-container">
+  <header class="main-container-header">
+    <a href="/" class="main-container-header-link">
+      <img src="images/logo.png" alt="" class="main-container-header-logo">
+    </a>
+  </header>
+  <div class="main-container-title">Ihre Rückkehr</div>
+  <section class="main-section">
+    <div class="main-section-text-container">
+      <div class="main-section-text">
+        <p>
+          Sie sind Ärztin oder Arzt, nicht mehr tätig aber spüren den Wunsch, sich gerade in diesen Zeiten
+          mit Ihrem Know How und Ihrem Engagement zum Wohle der Patientinnen und Patienten einbringen zu wollen:
+          <b>Dann tragen Sie sich mit Ihren Daten bei uns ein</b>. Wir sorgen dafür, dass Sie Ihr gesellschaftliches
+          Engagement an der für Sie passenden Stelle im Krankenhauswesen zum Einsatz bringen können.
+        </p>
+        <p>
+          Wir stehen seit Jahrzehnten für schnelle, professionelle und unkomplizierte Personalberatung und kennen die
+          Krankenhausbranche aus allen Perspektiven. Seit Jahrzenten vertrauen uns Menschen und Auftraggeber.
+        </p>
+        <div class="main-section-text-title">
+          Wir freuen uns auf den Kontakt mit Ihnen!
+        </div>
+      </div>
+      <a href="https://beratung-dobrindt.de/" class="link-to-main-page" target="_blank">
+        <span>beratung-dobrindt.de</span>
+        <img src="images/Arrow-right-circle.svg" alt="">
+      </a>
+    </div>
+
+    <form id="form" action="#" method="post" class="main-section-form-container" enctype="multipart/form-data">
+      <div class="main-section-form-fields">
+        <div class="main-section-form-col">
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Vorname*</div>
+                <input type="text" id="first_name" name="first_name" class="form-input" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Nachname*</div>
+                <input type="text" id="second_name" name="second_name" class="form-input" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Mail-Adresse*</div>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Handynummer</div>
+                <input type="text" id="phone" name="phone" class="form-input">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container birth-input-container">
+                <div class="form-input-container-label">Geb-Dat</div>
+                <input type="text" id="birth" name="birth" class="form-input" placeholder="TT.MM.JJ">
+                <img src="images/date_range.svg" alt="" class="calendar-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section-form-col">
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="location-container">
+                  <img src="images/Location-pin.svg" alt="">
+                  <span>Anschrift:</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Strasse</div>
+                <input type="text" id="street" name="street" class="form-input">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Hausnummer</div>
+                <input type="text" id="building" name="building" class="form-input">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Postleitzahl</div>
+                <input type="text" id="zipcode" name="zipcode" class="form-input">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-input-container">
+                <div class="form-input-container-label">Stadt</div>
+                <input type="text" id="city" name="city" class="form-input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-col">
+          <div class="form-input-container birth-input-container">
+            <div class="form-input-container-label">Fachrichtung/Schwerpunkte/Zusatzbezeichnungen</div>
+            <textarea name="comments" id="comments" class="form-input"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="form-row align-top">
+        <div class="form-col half-width-col">
+          <div class="form-input-container">
+            <div class="form-input-container-label">Verfügbarkeit</div>
+            <div class="form-checkbox-container">
+              <input type="checkbox" id="regional" name="regional">
+              <label for="regional">Regional</label>
+            </div>
+            <div class="form-checkbox-container">
+              <input type="checkbox" id="uberregional" name="uberregional">
+              <label for="uberregional">Überregional</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-col half-width-col">
+          <div class="form-input-container">
+            <div class="form-input-container-label">Lebenslauf</div>
+            <div class="form-file-comment">
+              Mögliche Dateiformate: pdf, doc, docx, jpg, jpeg, png, zip Maximale Dateigröße: 15 MB
+            </div>
+            <div class="file-input-form-container">
+              <div id="file-input-selected-file" class="file-input-selected-file">
+                <img src="images/attach_file.svg" alt="">
+                <span id="file-input-selected-file-name" class="file-input-selected-file-name"></span>
+              </div>
+              <input type="file" id="file" name="file" accept="image/png, image/jpeg, image/jpg, .pdf, .doc, .docx, .zip" oninput="onInputFilesInput(event)">
+              <label for="file">
+                + Datei hinzufügen
+              </label>
+            </div>
+            <div id="form-file-error" class="form-file-error">Die Dateigröße beträgt mehr als 15 MB</div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-button-container">
+        <button type="submit" class="submit-button">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="main-container-footer">
+    <div class="main-container-footer-col">
+      Silvia Dobrindt - Beratung im Gesundheitswesen GmbH & Co. KG <br>
+      Neuer Zollhof 3<br>
+      40221 Düsseldorf, NRW<br>
+      Germany<br>
+    </div>
+    <div class="main-container-footer-col smaller-col">
+      <div class="contact-row">
+        <span class="contact-row-label">Telefon:</span>
+        <span class="contact-row-text">
+          <a href="tel:021124087520" class="silvia-link">02 11 / 240 875 - 20</a>
+        </span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-label">Telefon:</span>
+        <span class="contact-row-text">
+          <a href="tel:021124087599" class="silvia-link">02 11 / 240 875 - 99</a>
+        </span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-label">Email:</span>
+        <span class="contact-row-text">
+          <a href="mailto:info@beratung-dobrindt.de" class="silvia-link">info@beratung-dobrindt.de</a>
+        </span>
+      </div>
+    </div>
+    <div class="main-container-footer-col smaller-col">
+      Kontakt <br>
+      <a href="https://beratung-dobrindt.de/datenschutzerkl%C3%A4rung.html" class="silvia-link" target="_blank">Datenschutzerklärung</a><br>
+      <a href="https://beratung-dobrindt.de/impressum.html" class="silvia-link" target="_blank">Impressum</a><br>
+    </div>
+  </footer>
+</div>
+
+</body>
+<script>
+  const formFileError = document.getElementById('form-file-error');
+  const fileInputSelectedFile = document.getElementById('file-input-selected-file');
+  const fileInputSelectedFileName = document.getElementById('file-input-selected-file-name');
+  function onInputFilesInput(event) {
+    formFileError.classList.remove('visible');
+    if (event && event.target && event.target.files && event.target.files[0]) {
+      const file = event.target.files[0];
+      if (file.size > 15 * 1024 * 1024) {
+        fileInputSelectedFileName.innerText = '';
+        fileInputSelectedFile.classList.remove('visible');
+        formFileError.classList.add('visible');
+        event.target.value = '';
+      } else {
+        fileInputSelectedFileName.innerText = file.name;
+        fileInputSelectedFile.classList.add('visible');
+      }
+    }
+  }
+
+  // todo Aleksey remove this code if you will send data directly from form via "action" attribute
+  const form = document.getElementById('form');
+  form.addEventListener('submit', function(event) {
+    console.log('submit ', event);
+    event.preventDefault();
+  });
+</script>
+</html>
